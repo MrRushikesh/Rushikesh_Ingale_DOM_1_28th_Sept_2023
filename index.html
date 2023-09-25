@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<body>
+
+    <div class="header">
+        <p>Click & Win Gallery Adventure</p>
+    </div>
+
+    <div class='rule-section'>
+        <div class="objective">
+            <p id="objHeading">Objective of The Game -: </p>
+            <p id="objDesc">Complete a series of tasks by clicking on images in a gallery to win a 12-digit coupon code.</p>
+        </div>
+
+        <div class="rule">
+            <p id="ruleHeading">Rule for The Game -: </p>
+
+            <ul type="disc">
+                <li>You have access to a gallery with four images displayed in a single row.</li>
+                <li>Each image can be clicked only once, and they must be clicked in sequential order (i.e., 1st, 2nd, 3rd, and then 4th).</li>
+                <li>When you click on the 1st image, a registration form will appear, prompting you to enter your name, email, and username.</li>
+                <li>After successfully registering, proceed to click on the 2nd image.</li>
+                <li>Clicking on the 2nd image will reveal the names and usernames of all registered players.</li>
+                <li>Now, click on the 3rd image (which shows a dice). Click it a maximum of three times. After three clicks, the game will check if the sum of all three randomly generated values is greater than 10.</li>
+                <li>If the sum is greater than 10, you'll be allowed to click on the 4th image. If not, you will receive a message: "Try again after scoring more than 10."</li>
+                <li>When the 4th image is clicked, it will generate a random 12-digit coupon code. The coupon code should be styled accordingly.</li>
+                <li>If you successfully generate a 12-digit coupon code, you'll be congratulated with a special message or image.</li>
+                <li>If, on the 3rd image, you fail to achieve a total sum greater than 10 even after three clicks, you'll receive a message: "Bad luck" and won't be given another chance.</li>
+                <li>All actions within the game must be completed sequentially, and the game can only progress from one step to the next based on successful completion of the previous step.</li>
+                <li>Enjoy the game and good luck in your quest to unlock the 12-digit coupon code!</li>
+            </ul>
+            
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <div class="image" id="image1" onclick="registerForm()">
+            <img src="./assets/Beef Stroganoff (Russian).jpg" height="400px" width="100px" alt="Image 1">
+        </div>
+        <div class="image" id="image2" onclick="displayForm()">
+            <img src="./assets/Biryani (Indian).jpg" alt="Image 2">
+        </div>
+        <div class="image" id="image3">
+            <img src="./assets/Chicken Tikka Masala (Indian).jpg" alt="Dice">
+        </div>
+        <div class="image" id="image4">
+            <img src="./assets/Lasagna (Italian).jpg" alt="Image 4">
+        </div>
+    </div>
+
+    <div id="loadForm">
+
+    </div>
+
+    <div id="displayResult">
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

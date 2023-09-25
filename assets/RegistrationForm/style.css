@@ -1,0 +1,140 @@
+
+/* Form Container */
+
+
+.formContainer_1{
+    /* border: 2px solid green; */
+    position: absolute;
+    /* height: 450px; */
+    background-color: #f4f5e5;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width:350px;
+    margin-left: 35%;
+    /* z-index: 10; */
+    /* margin-top: -27%; */
+
+
+}
+
+
+.formContainer_1 > div{
+    /* height: 400px; */
+    width:500px;
+    /* margin-top:50px; */
+    /* border: 2px solid red; */
+}
+
+#closeBtn{
+    display:block;
+    float:right;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+.inputText_1{
+    height: 80px;
+    width:99%;
+    /* border: 2px solid purple; */
+    margin-top: 5px;
+    
+}
+
+.inputText_2{
+    height: 80px;
+    width:99%;
+    /* border: 2px solid purple; */
+    margin-top: px;
+    
+
+}
+
+.inputText_2 > p{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 70px;
+    /* border: 2px solid blue; */
+}
+
+/* .inputText_1 > button{
+    margin-left: 130px;
+    display: inline-block;
+    border: 2px solid blue;
+
+
+} */
+
+.inputText_1 > label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.inputText_1 > label > span{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    /* color:#b6b6b6; */
+    /* color: red; */
+}
+
+.redAlert{
+    color:red;
+}
+
+
+.greenAlert{
+    color: green;
+}
+
+
+.inputText_1 > input{
+    display: inline-block;
+    height: 35px;
+    width:99%;
+    margin-top:5px;
+    font-size: 16px;
+    font-style: oblique;
+
+}
+
+
+
+.submitBtn_1{
+    height: 80px;
+    width:100%;
+    /* border: 2px solid purple; */
+    margin-top: 5px;
+    /* text-align: center; */
+}
+
+.submitBtn_1 > input{
+    display: block;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-left: 25%;
+    height: 45px;
+    width:200px;
+    font-size: 18px;
+    background-color: #dddb22;
+    color:#063d22;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.submitBtn_1 > input:hover{
+    background-color: #3d8272;
+    color: black;
+}
+
+
+
+
+
+
