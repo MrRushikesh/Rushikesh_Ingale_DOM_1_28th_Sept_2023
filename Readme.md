@@ -37,7 +37,14 @@ iii) JavaScript
 
 # Screenshots -:
 
-1. <a href="./assets/Screenshot/first.png">
-1. <a href="./assets/Screenshot/second.png">
-1. <a href="./assets/Screenshot/third.png">
-1. <a href="./assets/Screenshot/last.png">
+1. Homepage -: 
+  <img src="./assets/Screenshot/first.png" alt="homepage">
+
+2. Registration Form -: 
+  <img src="./assets/Screenshot/second.png" alt="second">
+
+3. Display Form -: 
+  <img src="./assets/Screenshot/third.png" alt="third">
+
+4. Main Section -: 
+  <img src="./assets/Screenshot/last.png" alt="fourth>
