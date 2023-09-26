@@ -1,5 +1,7 @@
 let images = document.querySelectorAll('.image');
 let result = document.getElementById('result');
+let gameSection  = document.getElementById('gameSection');
+let gallery = document.getElementsByClassName('gallery')[0];
 
 
 let sum = 0;
@@ -8,7 +10,10 @@ let couponGenerated = false;
 
 function registerForm(){
     let loadForm = document.getElementById('loadForm');
+    gameSection.style.opacity='0.2';
+    gallery.style.opacity='0.2';
     loadForm.style.opacity='1.0';
+   
     loadForm.innerHTML = `
     <div class="formContainer_1">    
         <div>  
@@ -100,6 +105,7 @@ function validation(){
 
     if(!(isValid)){
         event.preventDefault()
+        alert(`Please ensure the form is correctly filled out. 🙏`)
     }else{
         images[1].style.pointerEvents = 'auto';
         alert(`Congratulations! ${fname} You're Successfully Registered.🤗`)
@@ -111,12 +117,21 @@ function validation(){
 
 
 function displayForm(){
+
+    if(!(sessionStorage.getItem('fname'))){
+        alert("Registration required.🚫");
+        return;
+    }
+
+
     let loadForm = document.getElementById('loadForm');
+    gameSection.style.opacity='0.2';
+    gallery.style.opacity='0.2';
     loadForm.style.opacity='1.0';
     loadForm.innerHTML = `
     <div class="formContainer_3">    
         <div>  
-            <button id="closeBtn" onclick="closeForm()">&times;</button>
+            <button id="closeBtn2" onclick="closeForm()">&times;</button>
             <form action="#" method="GET" id="displayForm">
                 <div class="inputText_3">
                     <p>User Registration Form</p>   
@@ -140,30 +155,51 @@ function displayForm(){
  function closeForm(){
     let loadForm = document.getElementById('loadForm');
     loadForm.style.opacity='0.0';
+    gameSection.style.opacity='1.0';
+    gallery.style.opacity='1.0';
  }
 
 
 
 images[2].addEventListener('click', () => {
+    if(!(sessionStorage.getItem('fname'))){
+        alert("Registration is required. 🚫");
+        return;
+    }
+
     if (attempts < 3) {
-        const randomValue = Math.floor(Math.random() * 6) + 6;
+        const randomValue = Math.floor(Math.random() * 3) * 4;
         sum += randomValue;
         attempts++;
 
         if (attempts === 3 && sum <= 10) {
-            alert('Try again after scoring more than 10.');
+            alert(`Sorry ! 🙇🏻‍♂️  You've not scored over 10, which means you'r not qualify to generate a coupon. 🚫`);
         } else if (attempts === 3 && sum > 6) {
+            alert(`Congratulations! 🥳  You've scored over 10, which means you qualify to generate a coupon.`);
             images[3].style.pointerEvents = 'auto';
         }
     } else {
-        alert('You can only click this image three times.');
+        alert('🚫 Stop, You can only click this image 3️ times.');
     }
 });
 
 images[3].addEventListener('click', () => {
+
+    if(!(sessionStorage.getItem('fname'))){
+        alert("To access your coupon, registration is required. 🚫");
+        return;
+    }
+
+    if(!(sum > 10)){
+        alert("Sorry ! 🙇🏻‍♂️  You've not scored over 10, which means you'r not qualify to generate a coupon.🚫");
+        return;
+
+    }
+
     if (!couponGenerated) {
         const coupon = generateCoupon();
-        result.innerHTML = `Congratulation you'r coupon is Here: ${coupon}`;
+        alert(`Congratulations! You're the lucky winner of an exclusive coupon. : 🎉 ${coupon} 🎉`)
+        result.innerHTML = `Congratulations! You're the lucky winner of an exclusive coupon. : 🎉 ${coupon} 🎉`;
         couponGenerated = true;
         images[3].style.pointerEvents = 'none';
         images[2].style.pointerEvents = 'none';
