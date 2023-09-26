@@ -11,9 +11,12 @@
 
 3. Technologies Used
 
-i) HTML5
-ii) CSS3
-iii) JavaScript
+<ol type="i">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavsScript</li>
+</ol>
+
 
 
 # Features -:
