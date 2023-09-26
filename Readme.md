@@ -37,14 +37,14 @@ iii) JavaScript
 
 # Screenshots -:
 
-1. Homepage -: 
+1. <b>Homepage-:</b>
   <img src="./assets/Screenshot/first.png" alt="homepage">
 
-2. Registration Form -: 
+2. <b>Registration Form -:</b> 
   <img src="./assets/Screenshot/second.png" alt="second">
 
-3. Display Form -: 
+3. <b>Display Form -: </b>
   <img src="./assets/Screenshot/third.png" alt="third">
 
-4. Main Section -: 
+4. <b>Main Section -: </b>
   <img src="./assets/Screenshot/last.png" alt="fourth>
