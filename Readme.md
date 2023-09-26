@@ -41,10 +41,10 @@ iii) JavaScript
   <img src="./assets/Screenshot/first.png" alt="homepage">
 
 2. <b>Registration Form -:</b> 
+<img src="./assets/Screenshot/third.png" alt="third">
+  
+3. <b>Display Form -: </b>
   <img src="./assets/Screenshot/second.png" alt="second">
 
-3. <b>Display Form -: </b>
-  <img src="./assets/Screenshot/third.png" alt="third">
-
 4. <b>Main Section -: </b>
-  <img src="./assets/Screenshot/last.png" alt="fourth>
+  <img src="./assets/Screenshot/fourth.png" alt="fourth>
