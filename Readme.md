@@ -44,7 +44,8 @@ iii) JavaScript
 <img src="./assets/Screenshot/third.png" alt="third">
   
 3. <b>Display Form -: </b>
-  <img src="./assets/Screenshot/second.png" alt="second">
+<img src="./assets/Screenshot/second.png" alt="second">
 
 4. <b>Main Section -: </b>
-  <img src="./assets/Screenshot/fourth.png" alt="fourth>
+<img src="./assets/Screenshot/fourth.png" alt="fourth">
+  
